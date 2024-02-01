@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 2 blog</title>
+    <link
+      rel="stylesheet"
+      href="../week2_css/w2.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="icon"
+      href="https://bolt-gcdn.sc-cdn.net/3/RTBCPb0t31WxP4luCBsmr?bo=EhgaABoAMgF9OgEEQgYI94zxqAZIAlASYAE%3D&uc=18"
+    />
+    <script
+      src="https://kit.fontawesome.com/aa537e05ea.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#img">Photos</a></li>
+          <li><a href="#tag">Tag</a></li>
+          <li><a href="#inline">Inline Style</a></li>
+          <li><a href="#internal">Internal Styles</a></li>
+          <li><a href="#selector">Selector Types</a></li>
+          <li><a href="#external">External Style</a></li>
+          <li><a href="#blOril">Block/Inline Elements</a></li>
+          <li><a href="#specify">Specificity</a></li>
+          <li><a href="#boxmod">Box Model</a></li>
+          <li><a href="#ccm">Contact</a></li>
+          <li><a href="#blog">Blogs</a></li>
+        </ul>
+      </nav>
+    </header>
+    <br />
+    <div class="content">
+      <h1>Week 2 blog</h1>
+      <h2>January 29-30, 2024</h2>
+      <p>
+        I will share lectures, syntax and everything I learned with knowledge
+        based blog
+      </p>
+      <p>
+        We learned about CSS this week and I am going to share everything here.
+      </p>
+    </div>
+    <br />
+    <br />
+    <div class="content" id="img">
+        <h4>Photos</h4>
+        <img src="./29.jpg" class="ph1" alt="photo that I took at 29th January">
+        <img src="./30.jpg" class="ph1" alt="photo that i took at 30th January">
+    </div>
+    <div class="content" id="tag">
+      <h4>Tag</h4>
+      <p>&lt;tag <span>style</span>=""&gt; &nbsp; Content &nbsp; &lt;tag&gt;</p>
+    </div>
+    <br />
+    <br />
+    <div class="content" id="inline">
+      <h4>Inline Style (using style attribute)</h4>
+      <p>
+        <span style="color: rgb(222, 39, 39)">Syntax rule </span> -
+        property:values;
+      </p>
+      <p style="font-size: 12px">
+        Some property and value pairs we are going to use in CSS (values are
+        examples)
+      </p>
+      <table>
+        <tr>
+          <td class="property">Property</td>
+          <td class="value">value</td>
+        </tr>
+        <tr>
+          <td class="property">color:</td>
+          <td class="value">red;</td>
+        </tr>
+        <tr>
+          <td class="property">font-size:</td>
+          <td class="value">__px;</td>
+        </tr>
+        <tr>
+          <td class="property">font-style:</td>
+          <td class="value">italic;</td>
+        </tr>
+        <tr>
+          <td class="property">line-height:</td>
+          <td class="value">__px;</td>
+        </tr>
+        <tr>
+          <td class="property">text-transform:</td>
+          <td class="value">lowercase;</td>
+        </tr>
+        <tr>
+          <td class="property">text-decoration:</td>
+          <td class="value">underline;</td>
+        </tr>
+        <tr>
+          <td class="property">text-align:</td>
+          <td class="value">center;</td>
+        </tr>
+        <tr>
+          <td class="property">font-weight:</td>
+          <td class="value">lighter/bolder/100-900:</td>
+        </tr>
+        <tr>
+          <td class="property">letter-spacing:</td>
+          <td class="value">__px;</td>
+        </tr>
+        <tr>
+          <td class="property">word-spacing:</td>
+          <td class="value">__px;</td>
+        </tr>
+      </table>
+    </div>
+    <br />
+    <br />
+    <div class="content" id="internal">
+      <h4>Internal styles</h4>
+      <p>
+        We use style tag &lt;<span>style</span>&gt; css selectors &lt;/<span
+          >style</span
+        >
+        &gt; to literally customize our css <br />
+        attributes inside of our html file.
+      </p>
+      <h5>Usage:</h5>
+      <p>
+        &lt;<span>style</span>&gt; <br />
+        &nbsp; &nbsp; selectors <br />
+        &lt;/<span>style</span>&gt;
+      </p>
+    </div>
+    <br />
+    <br />
+    <div class="content" id="selector">
+      <h4>Selector types</h4>
+      <p>So far, we have learned 3 types of selector:</p>
+      <ul>
+        <li><span>Element Selector</span></li>
+        <li><span>id selector</span></li>
+        <li><span>class selector</span></li>
+      </ul>
+      <ol>
+        <li>
+          <h5>element selector</h5>
+          <ul>
+            <li>
+              <span>tagName</span> { <br />
+              css property and value pairs <br />
+              }
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h5>class selector</h5>
+          <ul>
+            <li>
+              <span>.className</span> { <br />
+              css property and value pairs <br />
+              }
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h5>id selector</h5>
+          <ul>
+            <li>
+              <span>#idName</span> { <br />
+              css property and value pairs <br />
+              }
+            </li>
+          </ul>
+        </li>
+        <p style="font-size: 12px">We called those curly braces scopes.</p>
+      </ol>
+    </div>
+    <br />
+    <br />
+    <div class="content" id="external">
+      <h4>External Style</h4>
+      <ol>
+        <li>
+          <p>
+            When we use css attributes from outside of our html file is called
+            <br />
+            external styles.
+          </p>
+          <p>
+            &lt;link <span>href</span>="<span>Dir/file.extension</span>"
+            <span>rel</span>="<span>stylesheet</span>" &gt;
+          </p>
+        </li>
+        <li>
+          <p>
+            To get out of our locat dir, we will use double-dot and backslashes
+            to escapse from <br />local dir.
+          </p>
+
+          <p>
+            &lt;link <span>href</span>="<span>../Dir/file.extension</span>"
+            <span>rel</span>="<span>stylesheet</span>" &gt;
+          </p>
+        </li>
+      </ol>
+    </div>
+    <br />
+    <br />
+    <div class="content" id="blOril">
+      <h4>Block Elements or Inline Elements</h4>
+      <p style="font-size: 12px; font-weight: 2px">
+        In world of html, there are two types of html tags:
+      </p>
+      <ol>
+        <li>
+          <h5><span>Block Elements</span></h5>
+          <ul>
+            <li>
+              Elements that takes full position of where they located are called
+              block <br />
+              elements.
+            </li>
+            <li>
+              Block elements list
+              <ul>
+                <li>
+                  div <br />
+                  &lt;<span>div</span>&gt; Content &lt;/<span>div</span>&gt;
+                </li>
+                <li>
+                  table <br />
+                  &lt;<span>table</span>&gt; Content &lt;/<span>table</span>&gt;
+                </li>
+                <li>
+                  td <br />
+                  &lt;<span>td</span>&gt; Content &lt;/<span>td</span>&gt;
+                </li>
+                <li>
+                  h1 - h5 <br />
+                  &lt;<span>h1</span>&gt; Content &lt;/<span>h1</span>&gt;
+                </li>
+                <li>
+                  p <br />
+                  &lt;<span>p</span>&gt; Content &lt;/<span>p</span>&gt;
+                </li>
+                <li>
+                  li <br />
+                  &lt;<span>li</span>&gt; Content &lt;/<span>li</span>&gt;
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h5><span>Inline Elements</span></h5>
+          <ul>
+            <li>
+              Elements that takes only their element position of where they
+              located are <br />
+              called inline elements.
+            </li>
+            <li>
+              Inline elements list
+              <ul>
+                <li>
+                  i <br />
+                  &lt;<span>i</span>&gt; Content &lt;/<span>i</span>&gt;
+                </li>
+                <li>
+                  u <br />
+                  &lt;<span>u</span>&gt; Content &lt;/<span>u</span>&gt;
+                </li>
+                <li>
+                  button <br />
+                  &lt;<span>button</span>&gt; Content
+                  &lt;/<span>button</span>&gt;
+                </li>
+                <li>
+                  ul <br />
+                  &lt;<span>ul</span>&gt; Content &lt;/<span>ul</span>&gt;
+                </li>
+                <li>
+                  ol <br />
+                  &lt;<span>ol</span>&gt; Content &lt;/<span>ol</span>&gt;
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+    <br />
+    <br />
+    <div class="content" id="specify">
+      <h4>Specificity</h4>
+      <p>
+        To understand specificity very well, you should probably go and read
+        some arti-<br />cles in w3Schools about CSS
+        <a
+          href="https://www.w3schools.com/css/css_specificity.asp"
+          target="_blank"
+          style="text-decoration: underline black"
+          ><span>specificity</span></a
+        >.
+      </p>
+    </div>
+    <br />
+    <br />
+    <div class="content" id="boxmod">
+      <h4>Box Model</h4>
+      <p>There are three parts in the term "box model"</p>
+      <ol>
+        <li>
+          <h5><span>Margin</span></h5>
+          <ul>
+            <li>
+              Margin is something that the elements take the space between them
+              and ano-<br />ther elements.
+            </li>
+            <li>Margin has four parts: top, bottom, right, left</li>
+            <li>
+              Depends on our margins value, we will get our elements distance.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h5><span>Padding</span></h5>
+          <ul>
+            <li>Padding is the space between our content and border</li>
+            <li>Padding also has four parts: top, bottom, right and left</li>
+            <li>
+              Based on our padddings value, we will get our content's aura
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h5><span>Border</span></h5>
+          <ul>
+            <li>
+              I should have introduced border before I intorduce paddings.
+            </li>
+            <li>Border is just like a fence for our content.</li>
+            <li>It provide us a border for our content.</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+  </body>
+  <footer>
+    <div class="content" id="ccm" style="cursor: unset;">
+      <h4>Get to Creative Coder Myanmar with:</h4>
+      <a href="https://www.facebook.com/creativecodermm" target="_blank">
+        <i class="fa-brands fa-facebook fb"></i>
+      </a>     
+      <a href="https://creativecodermm.com/" target="_blank">
+        <i class="fa-solid fa-globe gg"></i>
+      </a>
+      <a
+        href="https://www.google.com/maps/place/Creative+Coder+Myanmar/@16.7721603,96.1711203,17z/data=!3m1!4b1!4m6!3m5!1s0x30c1ed279f680e7d:0x2f76d0ee1cb1be69!8m2!3d16.7721552!4d96.1737006!16s%2Fg%2F11qnrkbdyj?entry=ttu"
+        target="_blank"
+      >
+        <i class="fa-solid fa-location-dot locate"></i>
+      </a>
+    </div>
+    <div class="content" id="blog" style="cursor: unset; ">
+        <h4>Browse Other Bolgs</h4>
+        <table>
+            <tr>
+                <td ><a class="link" target="_blank" href="../../day1.html">Day 1 Blog</a></td>
+                <td ><a class="link" target="_blank" href="../../day2.html">Day 2 Blog</a></td>
+                <td ><a class="link" target="_blank" href="../../day3.html">Day 3 Blog</a></td>
+            </tr>
+        </table>
+    </div>
+  </footer>
+</html>
+
+&nbsp;
